@@ -9,10 +9,10 @@ from goods.models import Categories, Products
 @admin.register(Categories)
 class CategoriesAdmin(admin.ModelAdmin):
     #поле которое будет заполнятся автоматически
-    prepopulated_fields = {'slug': ('name',) }
+    prepopulated_fields = {'slug': ('name',)}
 
 
 @admin.register(Products)
 class ProductsAdmin(admin.ModelAdmin):
     #поле которое будет заполнятся автоматически
-    prepopulated_fields = {'slug': ('name',) }
+    prepopulated_fields = {'slug': ('name',)}
